@@ -1,4 +1,9 @@
 $(function(){
     console.log('$ is working fine....');
-    $("#lightgallery").lightGallery(); 
+
+    $("#lightgallery").lightGallery();
+
+    $('#launch-gallery').on('click', function(){
+        $('#first-image').trigger('click');
+    })
 });

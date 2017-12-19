@@ -7,29 +7,35 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="/node_modules/lightgallery/dist/css/lightGallery.min.css" />
-
+    <link type="text/css" rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
-    <h1>Image Galary</h1>
 
-    <div class="container">
-        <div id="lightgallery">
-            <a href="images/11-nature-photography-green.jpg">
-                <img src="images/11-nature-photography-green.jpg" style="height:500px; width:500px"/>
-            </a>
-            <a href="images/green trees.png" style="display:none;">
-                <img src="images/green trees.png" />
-            </a>
-            <a href="images/nature-hd-wallpaper-13.jpg" style="display:none;">
-                <img src="images/nature-hd-wallpaper-13.jpg" />
-            </a>
-            <a href="images/pexels-photo-257360.jpeg.jpg" style="display:none;">
-                <img src="images/pexels-photo-257360.jpeg.jpg" />
-            </a>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Light Gallery</a>
+    </nav>
+
+    <div class="container-fluid mt-50px d-flex justify-content-center">
+        <div>
+            <div id="lightgallery">
+                <a id="first-image" href="images/11-nature-photography-green.jpg">
+                    <img class="img-fluid" src="images/11-nature-photography-green.jpg" />
+                </a>
+                <a href="images/green trees.png" style="display:none;">
+                    <img class="img-fluid" src="images/green trees.png" />
+                </a>
+                <a href="images/nature-hd-wallpaper-13.jpg" style="display:none;">
+                    <img class="img-fluid" src="images/nature-hd-wallpaper-13.jpg" />
+                </a>
+                <a href="images/pexels-photo-257360.jpeg.jpg" style="display:none;">
+                    <img class="img-fluid" src="images/pexels-photo-257360.jpeg.jpg" />
+                </a>
+            </div>
+            <button class="btn btn-primary" type="button" id="launch-gallery">View Photos</button>
+        </div>
     </div>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
